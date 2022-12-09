@@ -10,7 +10,7 @@ using OpenQA.Selenium.Support.UI;
 namespace SeleniumTests
 {
     [TestFixture]
-    public class UntitledTestCase
+    public class Test3
     {
         private IWebDriver driver;
         private StringBuilder verificationErrors;
@@ -40,25 +40,23 @@ namespace SeleniumTests
         }
 
         [Test]
-        public void TheUntitledTestCaseTest()
+        public void The3Test()
         {
             driver.Navigate().GoToUrl("https://demowebshop.tricentis.com/");
-            driver.FindElement(By.LinkText("Register")).Click();
-            driver.FindElement(By.Id("FirstName")).Click();
-            driver.FindElement(By.Id("gender-male")).Click();
-            driver.FindElement(By.Id("FirstName")).Click();
-            driver.FindElement(By.Id("FirstName")).Clear();
-            driver.FindElement(By.Id("FirstName")).SendKeys("Zdravko");
-            driver.FindElement(By.Id("LastName")).Clear();
-            driver.FindElement(By.Id("LastName")).SendKeys("Mamba");
+            driver.FindElement(By.LinkText("Log in")).Click();
+            driver.FindElement(By.XPath("//form[@action='/login']")).Click();
+            driver.FindElement(By.Id("Email")).Click();
+            // ERROR: Caught exception [ERROR: Unsupported command [doubleClick | id=Email | ]]
             driver.FindElement(By.Id("Email")).Clear();
-            driver.FindElement(By.Id("Email")).SendKeys("maminjo@gmail.com");
+            driver.FindElement(By.Id("Email")).SendKeys("zdravkec.maminjo@gmail.com");
+            driver.FindElement(By.Id("Password")).Click();
             driver.FindElement(By.Id("Password")).Clear();
             driver.FindElement(By.Id("Password")).SendKeys("12345678");
-            driver.FindElement(By.Id("ConfirmPassword")).Clear();
-            driver.FindElement(By.Id("ConfirmPassword")).SendKeys("12345678");
-            driver.FindElement(By.Id("register-button")).Click();
-            driver.FindElement(By.XPath("//input[@value='Continue']")).Click();
+            driver.FindElement(By.Id("Password")).SendKeys(Keys.Enter);
+            driver.FindElement(By.LinkText("Desktops")).Click();
+            driver.FindElement(By.XPath("//input[@value='Add to cart']")).Click();
+            driver.FindElement(By.Id("add-to-cart-button-72")).Click();
+            driver.FindElement(By.LinkText("shopping cart")).Click();
         }
         private bool IsElementPresent(By by)
         {
