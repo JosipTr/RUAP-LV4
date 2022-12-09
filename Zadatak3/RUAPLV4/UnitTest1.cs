@@ -40,6 +40,40 @@ namespace SeleniumTests
         }
 
         [Test]
+        public void TheUntitledTestCaseTest()
+        {
+            driver.Navigate().GoToUrl("https://demowebshop.tricentis.com/");
+            driver.FindElement(By.LinkText("Register")).Click();
+            driver.FindElement(By.Id("FirstName")).Click();
+            driver.FindElement(By.Id("gender-male")).Click();
+            driver.FindElement(By.Id("FirstName")).Click();
+            driver.FindElement(By.Id("FirstName")).Clear();
+            driver.FindElement(By.Id("FirstName")).SendKeys("Zdravko");
+            driver.FindElement(By.Id("LastName")).Clear();
+            driver.FindElement(By.Id("LastName")).SendKeys("Mamič");
+            driver.FindElement(By.Id("Email")).Clear();
+            driver.FindElement(By.Id("Email")).SendKeys("zdrake.maminjo@gmail.com");
+            driver.FindElement(By.Id("Password")).Clear();
+            driver.FindElement(By.Id("Password")).SendKeys("12345678");
+            driver.FindElement(By.Id("ConfirmPassword")).Clear();
+            driver.FindElement(By.Id("ConfirmPassword")).SendKeys("12345678");
+            driver.FindElement(By.Id("register-button")).Click();
+            driver.FindElement(By.XPath("//input[@value='Continue']")).Click();
+        }
+
+        [Test]
+        public void The2Test()
+        {
+            driver.Navigate().GoToUrl("https://demowebshop.tricentis.com/");
+            driver.FindElement(By.LinkText("Log in")).Click();
+            driver.FindElement(By.Id("Email")).Clear();
+            driver.FindElement(By.Id("Email")).SendKeys("zdravkec.maminjo@gmail.com");
+            driver.FindElement(By.Id("Password")).Clear();
+            driver.FindElement(By.Id("Password")).SendKeys("12345678");
+            driver.FindElement(By.Id("Password")).SendKeys(Keys.Enter);
+        }
+
+        [Test]
         public void The3Test()
         {
             driver.Navigate().GoToUrl("https://demowebshop.tricentis.com/");
@@ -53,10 +87,11 @@ namespace SeleniumTests
             driver.FindElement(By.Id("Password")).Clear();
             driver.FindElement(By.Id("Password")).SendKeys("12345678");
             driver.FindElement(By.Id("Password")).SendKeys(Keys.Enter);
+            driver.FindElement(By.LinkText("Computers")).Click();
             driver.FindElement(By.LinkText("Desktops")).Click();
             driver.FindElement(By.XPath("//input[@value='Add to cart']")).Click();
             driver.FindElement(By.Id("add-to-cart-button-72")).Click();
-            driver.FindElement(By.LinkText("shopping cart")).Click();
+            driver.FindElement(By.LinkText("Shopping cart")).Click();
         }
         private bool IsElementPresent(By by)
         {
