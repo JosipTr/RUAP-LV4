@@ -1,0 +1,5 @@
+C:\Users\student\Desktop\CausicTroha\Zadatak3\ruaplv4testiranjenajnoviji\obj\Debug\net40\ruaplv4testiranjenajnoviji.csproj.AssemblyReference.cache
+C:\Users\student\Desktop\CausicTroha\Zadatak3\ruaplv4testiranjenajnoviji\obj\Debug\net40\ruaplv4testiranjenajnoviji.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\student\Desktop\CausicTroha\Zadatak3\ruaplv4testiranjenajnoviji\obj\Debug\net40\ruaplv4testiranjenajnoviji.AssemblyInfoInputs.cache
+C:\Users\student\Desktop\CausicTroha\Zadatak3\ruaplv4testiranjenajnoviji\obj\Debug\net40\ruaplv4testiranjenajnoviji.AssemblyInfo.cs
+C:\Users\student\Desktop\CausicTroha\Zadatak3\ruaplv4testiranjenajnoviji\obj\Debug\net40\ruaplv4testiranjenajnoviji.csproj.CoreCompileInputs.cache

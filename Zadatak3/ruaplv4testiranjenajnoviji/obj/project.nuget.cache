@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "45nSTtpi7/Fj4rVZFRBiDeRMJJYqatjBu9j3UEGF0nusqk3jYWpaTTTeGSlhjxVEywvxN4eRKLEwVZMfyBd6dw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\student\\Desktop\\CausicTroha\\Zadatak3\\ruaplv4testiranjenajnoviji\\ruaplv4testiranjenajnoviji.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
+    "C:\\Users\\student\\.nuget\\packages\\nunit3testadapter\\3.16.1\\nunit3testadapter.3.16.1.nupkg.sha512",
+    "C:\\Users\\student\\.nuget\\packages\\selenium.support\\4.7.0\\selenium.support.4.7.0.nupkg.sha512",
+    "C:\\Users\\student\\.nuget\\packages\\selenium.webdriver\\4.7.0\\selenium.webdriver.4.7.0.nupkg.sha512",
+    "C:\\Users\\student\\.nuget\\packages\\selenium.webdriver.chromedriver\\108.0.5359.7100\\selenium.webdriver.chromedriver.108.0.5359.7100.nupkg.sha512"
+  ],
+  "logs": []
+}
